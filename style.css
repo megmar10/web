@@ -1,0 +1,57 @@
+body{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    background: url(kép1a.webp);
+    color: gold;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header "
+    "section section section"
+    "footer footer footer";
+    max-width: 1500px;
+}
+
+header{
+    grid-area: header;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "li1 li2 li3";
+}
+
+#li1{
+    grid-area: li1;
+    text-align: center;
+    border: 3px solid black;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    
+
+}
+
+#li2{
+    grid-area: li2;
+    text-align: center;
+    border: 3px solid black;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+
+}
+
+
+#li3{
+    grid-area: li3;
+    text-align: center;
+    border: 3px solid black;
+    width: 300px;
+    height: 50px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+
